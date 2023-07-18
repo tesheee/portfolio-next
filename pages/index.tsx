@@ -292,9 +292,9 @@ export default function Home() {
                 <br />
                 <br />
                 <div>
-                  <h2>2. Площадка по продаже битов Hagenti.Beats</h2>
+                  <h2>2. Онлайн чат</h2>
                   <div>
-                    <iframe src='https://hagenti-vite.vercel.app/'></iframe>
+                    <iframe src='https://hagenti-chat.vercel.app'></iframe>
                   </div>
                   <div>
                     <h2>Стэк технологий</h2>
