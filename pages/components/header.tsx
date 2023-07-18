@@ -35,7 +35,7 @@ export default function Header() {
               <a
                 onClick={() =>
                   window.scrollTo({
-                    top: 4050,
+                    top: 3450,
                     behavior: "smooth",
                   })
                 }

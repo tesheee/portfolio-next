@@ -27,7 +27,11 @@ const titleAnimation = {
 };
 
 export default function Home() {
-  const { ref, inView } = useInView({
+  const [ref, inView] = useInView({
+    threshold: 0,
+  });
+
+  const [ref1, inView1] = useInView({
     threshold: 0,
   });
 
@@ -51,12 +55,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className='sticky_container'>
+        <div className='sticky_container_small'>
           <div className='main_bot_block'>
             <motion.div
               className='container'
               initial='hidden'
-              viewport={{ amount: 0 }}
+              viewport={{ amount: 0, once: true }}
               whileInView='visible'
             >
               <div className='skills_block'>
@@ -262,6 +266,40 @@ export default function Home() {
                   <h2>
                     1. Интернет-магазин компьютерных комплектующих Hagenti
                   </h2>
+                  <div>
+                    <iframe src='https://hagenti-vite.vercel.app/'></iframe>
+                  </div>
+                  <div>
+                    <div>
+                      <h2>Краткое описание</h2>
+                      <p>
+                        Стандартный интернет-магазин на React с нестандартным
+                        дизайном и своей айдентикой, покрывающий 90% процентов
+                        потребностей в функционале
+                      </p>
+                    </div>
+                    <div>
+                      <h2>Стэк технологий</h2>
+                      <p>React.JS / Redux Toolkit / TypeScript / SCSS.</p>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <div>
+                  <h2>2. Площадка по продаже битов Hagenti.Beats</h2>
+                  <div>
+                    <iframe src='https://hagenti-vite.vercel.app/'></iframe>
+                  </div>
+                  <div>
+                    <h2>Стэк технологий</h2>
+                    <p>React.JS / Redux Toolkit / TypeScript / SCSS.</p>
+                  </div>
                 </div>
               </section>
             </div>
